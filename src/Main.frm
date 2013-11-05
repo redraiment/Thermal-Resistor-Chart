@@ -309,6 +309,7 @@ Private Sub MenuSetOption_Click()
     ConfigFrm.Left = MainFrm.Left + (MainFrm.Width - ConfigFrm.Width) \ 3
     ConfigFrm.Top = MainFrm.Top + (MainFrm.Height - ConfigFrm.Height) \ 3
     InitConfigFrm
+    ConfigFrm.TabBox.SelectedItem = ConfigFrm.TabBox.Tabs(1)
     ConfigFrm.Show
 
 End Sub
