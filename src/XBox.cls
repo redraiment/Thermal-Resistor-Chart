@@ -147,3 +147,9 @@ Public Sub Load(fileName As String)
     Close #1
 
 End Sub
+
+Public Sub Export(fileName As String)
+
+    SavePicture box.Image, fileName
+
+End Sub

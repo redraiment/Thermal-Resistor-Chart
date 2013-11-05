@@ -3,7 +3,7 @@ Object = "{648A5603-2C6E-101B-82B6-000000000014}#1.1#0"; "MSCOMM32.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
 Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form MainFrm 
-   Caption         =   "温度电阻检测仪 - 温州智润机电有限公司"
+   Caption         =   "温度电阻检测仪 - redraiment.com"
    ClientHeight    =   7290
    ClientLeft      =   1620
    ClientTop       =   1740
@@ -292,6 +292,31 @@ Private Sub MenuFileSave_Click()
 
     If fileName <> "" Then
         box.Save fileName
+    End If
+
+End Sub
+
+Private Sub MenuFileSaveAs_Click()
+
+    ComDlg.DialogTitle = "保存文件"
+    ComDlg.Filter = "Text File(*.txt)|*.txt"
+    ComDlg.fileName = ""
+    ComDlg.ShowSave
+    If ComDlg.fileName <> "" Then
+        fileName = ComDlg.fileName
+        box.Save fileName
+    End If
+
+End Sub
+
+Private Sub MenuFileExport_Click()
+
+    ComDlg.DialogTitle = "导出图片"
+    ComDlg.Filter = "JPEG(*.jpg)|*.jpg|BMP(*.bmp)|*.bmp|GIF(*.gif)|*.gif"
+    ComDlg.fileName = ""
+    ComDlg.ShowSave
+    If ComDlg.fileName <> "" Then
+        box.Export ComDlg.fileName
     End If
 
 End Sub
