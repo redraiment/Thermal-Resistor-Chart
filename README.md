@@ -1,12 +1,18 @@
-#ÎÂÃôµç×èÌØĞÔÇúÏß×Ô¶¯²âÁ¿ÏµÍ³
+ï»¿#æ¸©æ•ç”µé˜»ç‰¹æ€§æ›²çº¿è‡ªåŠ¨æµ‹é‡ç³»ç»Ÿ
 
-Ë«»÷install.bat×Ô¶¯°²×°
+## å±å¹•æˆªå›¾
+
+![Screenshot](https://raw.github.com/redraiment/Thermal-Resistor-Chart/master/dashboard.png)
+
+## ä½¿ç”¨æ–¹æ³•
+
+åŒå‡»install.batè‡ªåŠ¨å®‰è£…
 
 * CH341SER.EXE
-  ´®¿Ú×ªUSBÇı¶¯
+  ä¸²å£è½¬USBé©±åŠ¨
 
 * MSCOMM32.OCX
-  ·ÃÎÊ´®¿ÚµÄ¿Ø¼ş
+  è®¿é—®ä¸²å£çš„æ§ä»¶
 
 * COMDLG32.OCX
-  Í¨ÓÃ´°¿Ú¿Ø¼ş
+  é€šç”¨çª—å£æ§ä»¶
