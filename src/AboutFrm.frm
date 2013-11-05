@@ -52,6 +52,6 @@ Private Sub Form_Load()
 
     AboutMsg.Caption = "温度电阻检测是 版本 1.0" & vbCrLf _
                      & "版权所有(C) 2013-" & Year(Now) & "," & vbCrLf _
-                     & "温州智润机电有限公司"
+                     & "redraiment.com"
 
 End Sub
