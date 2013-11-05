@@ -64,7 +64,7 @@ Public Sub LoadConfig()
     GetPrivateProfileString "comm", "port", "1", value, 32, ConfigFile
     AppCfg.CommPort = CLng(value)
 
-    GetPrivateProfileString "comm", "interval", "5000", value, 32, ConfigFile
+    GetPrivateProfileString "comm", "interval", "1000", value, 32, ConfigFile
     AppCfg.CommInterval = CLng(value)
 
 End Sub
