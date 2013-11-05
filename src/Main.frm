@@ -234,6 +234,7 @@ End Sub
 Private Sub Interval_Timer()
 
     If Phone.PortOpen Then Phone.Output = "Z"
+    Interval.Interval = AppCfg.CommInterval
 
 End Sub
 
